@@ -1,0 +1,118 @@
+body{
+    background-color:#bdb2ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+h1{display:block;
+    color: #03045e;
+    font-weight: 900;
+    font-size: 20px;
+}
+html{
+    box-sizing: border-box;
+    font-family:'Open Sans',sans-serif ;
+}
+ul,li{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+.panel{
+    background-color: whitesmoke;
+    border-radius:20px;
+    padding:15px 25px;
+    width:80%;
+    height:80%;
+    max-width: 900px;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.types{
+    border-bottom:2px solid #a0c4ff ;
+    
+}
+.types :last-child{
+    border-bottom: none;
+}
+.t1{
+    padding-top: 5px;
+}
+.food-img{
+    margin-bottom: 25px;
+    margin-top:25px ;
+    width: 90%;
+    border-radius: 50%;
+    border: 2px solid #f3a9f3;
+    max-width: 100%;
+}
+.food-img:nth-child(1){
+    margin-top:5px ;
+}
+.header{
+    color:#03045e;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.food{
+margin: 50px 0 25px 0;
+color: #023e8a;
+}
+
+.listelements{
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height:1.5;
+    padding: 15px;
+    border-top: 1px solid #a0c4ff;
+}
+.listelements:last-child{
+    border-bottom: 1px solid #a0c4ff;
+}
+.pricing-price{
+    color:#03045e;
+    display: block;
+    font-size: 35px;
+    font-weight: 700;
+}
+.button{
+    border:1px solid #0077b6;
+    border-radius:20px;
+    color:#023e8a;
+    font-weight: 600;
+display:inline-block;
+padding:15px 35px;
+text-decoration: none;
+margin:25px;
+}
+.button:hover,.button:focus{
+    background-color: #03045e;
+    color:whitesmoke;
+    transition:background-color 500ms ease-in-out;  
+}
+@media (min-width:900px){
+    .panel{
+        flex-direction: row;
+        width:1000px;
+        height:80%;
+        max-height:1000px;
+    }
+    .types{
+        border-bottom:none;
+        border-right:  1px solid #a0c4ff;
+        padding: 25px 30px;
+    }
+    .types:last-child{
+        border-right:none;
+    }
+    .pricing-price{
+        font-size: medium;
+    }
+}
+
+
